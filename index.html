@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumpah Pemuda</title>
+</head>
+<body>
+    <header>
+        <h1>Sumpah Pemuda</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Makna Sumpah Pemuda</h2>
+        <p>Sumpah Pemuda merupakan sebuah ikrar yang diucapkan oleh para pemuda pada tanggal 28 Oktober 1928. Ikrar ini menjadi tonggak penting dalam sejarah perjuangan Indonesia menuju kemerdekaan.</p>
+    
+        <h2>Teks Sumpah Pemuda</h2>
+        <p>
+            Kami putra dan putri Indonesia, mengaku bertumpah darah yang satu, tanah Indonesia.<br>
+            Kami putra dan putri Indonesia, mengaku berbangsa yang satu, bangsa Indonesia.<br>
+            Kami putra dan putri Indonesia, menjunjung bahasa persatuan, bahasa Indonesia.
+        </p>
+    
+        <button id="btn-sejarah">Sejarah Singkat Sumpah Pemuda</button>
+    
+        <p id="sejarah"></p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Informasi Sumpah Pemuda</p>
+    </footer>
+    <script>
+        document.getElementById('btn-sejarah').addEventListener('click', function() {
+            const sejarahText = `
+                Kongres Pemuda Kedua dilaksanakan pada tanggal 27-28 Oktober 1928 di Batavia (Jakarta). Kongres ini dihadiri oleh berbagai organisasi pemuda dari berbagai daerah di Indonesia. 
+                Pada akhir kongres, para pemuda berikrar untuk bersatu dalam tumpah darah, bangsa, dan bahasa yang satu, yaitu Indonesia.
+
+                Tokoh-Tokoh Sumpah Pemuda
+Proses di balik lahirnya Sumpah Pemuda melibatkan banyak tokoh pemuda dari pelbagai kalangan. Mereka semua ada yang bertindak sebagai panitia hingga pemimpin kongres.
+
+Adapun tokoh-tokoh Sumpah Pemuda adalah sebagai berikut:
+
+1. Sugondo Joyopuspito
+2. Mohammad Yamin
+3. Wage Rudolf Supratman
+4. Amir Syarifuddin Harapan
+5. Joko Marsaid
+6. Sie Kong Lian
+7. Sarmidi Mangunsarkoro
+8. Nona Purnomowulan
+9. Johannes Leimena
+10. Sekarmadji Maridjan Kartosuwiryo
+11. Kasman Singodimedjo
+12. Mohammad Roem
+13. Adnan Kapau Gani
+            `;
+            document.getElementById('sejarah').innerText = sejarahText;
+        });
+    </script>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff4b5c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        #btn-sejarah {
+            background-color: #ff4b5c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #btn-sejarah:hover {
+            background-color: #ff2a3a;
+        }
+    </style>
+</body>
+</html>
